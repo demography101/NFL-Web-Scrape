@@ -64,13 +64,14 @@ sns.set_palette(sns.color_palette(colors))
 plt.figure(figsize=(12, 8))
 
 # Plot
-sb23 = sns.barplot(data=nfl_players_exp, x='Exp', y='Player', hue='Team')
+years = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14']
+
+sb23 = sns.barplot(data=nfl_players_exp, x="Exp", y="Player", hue="Team",
+                   order = years)
 sb23.set_title("Super Bowl LVII Players' Years of Experience")
 sb23.legend(loc='upper right', title='Team')
 sb23.set_xlabel("Years of Experience")
 sb23.set_ylabel("Number of Players")
-
-
 
 # Height
 
