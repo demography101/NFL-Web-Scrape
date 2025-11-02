@@ -73,16 +73,7 @@ sb23.legend(loc='upper right', title='Team')
 sb23.set_xlabel("Years of Experience")
 sb23.set_ylabel("Number of Players")
 
-# Height
 
-plt.figure(figsize=(12, 8))
-
-sb_ht = sns.barplot(data = nfl_players_ht, x = "HT", y = "Player",
-                    order = heights, color = "#8B0000", errwidth = 0)
-sb_ht.set_title("Height of Players in Super Bowl LVII")
-sb_ht.legend(loc='upper right', title='Team')
-sb_ht.set_xlabel("Height (Ft-in)")
-sb_ht.set_ylabel("Number of Players")
 
 
 
