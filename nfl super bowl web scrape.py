@@ -1,8 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-@author: corinamccullough
-"""
-
 import pandas as pd 
 import requests 
 from bs4 import BeautifulSoup 
