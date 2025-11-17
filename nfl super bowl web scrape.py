@@ -2,6 +2,7 @@ import pandas as pd
 import requests 
 from bs4 import BeautifulSoup 
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 
 url1 = "https://www.chiefs.com/team/players-roster/"
@@ -43,15 +44,8 @@ nfl.to_excel("nfl_web_scrape.xlsx")
 
 
 # Let's make a quick graph
-# Years od Experience
-nfl_players_exp = nfl.groupby(["Exp","Team"], as_index = False).count()
-
-# Height
-nfl_players_ht = nfl.groupby(["HT","Team"], as_index = False).count()
-
 # Years of Experience
-import pandas as pd
-import seaborn as sns
+nfl_players_exp = nfl.groupby(["Exp","Team"], as_index = False).count()
 
 colors = ["#8B0000", "#388E8E"]
 sns.set_palette(sns.color_palette(colors))
